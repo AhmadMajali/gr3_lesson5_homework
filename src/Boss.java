@@ -1,28 +1,35 @@
 public class Boss {
-    int healthBoss;
-     int damageBoss;
-     String typeOfDefence;
+    private int BossHealth = 100;
+    private int BossDamage = 50;
+    private String BossDefenseType;
 
-
-
-    public int getHealth() {
-        return healthBoss;
+    public Boss(int bossHealth, int bossDamage, String bossDefenseType) {
+        BossHealth = bossHealth;
+        BossDamage = bossDamage;
+        BossDefenseType = bossDefenseType;
     }
 
-    public void setHealth() {
-        this.healthBoss = healthBoss;
+    public int getBossHealth() {
+        return BossHealth;
     }
 
-    public int getDamage() {
-        return damageBoss;
+    public void setBossHealth(int bossHealth) {
+        BossHealth = bossHealth;
     }
 
-    public void setDamage() { this.damageBoss = damageBoss;}
-
-    public String getTypeOfDefence() {return typeOfDefence;
+    public int getBossDamage() {
+        return BossDamage;
     }
 
-    public void setTypeOfDefence() { this.typeOfDefence = typeOfDefence;}
+    public void setBossDamage(int bossDamage) {
+        BossDamage = bossDamage;
+    }
 
+    public String getBossDefenseType() {
+        return BossDefenseType;
+    }
 
+    public void setBossDefenseType(String bossDefenseType) {
+        BossDefenseType = bossDefenseType;
+    }
 }

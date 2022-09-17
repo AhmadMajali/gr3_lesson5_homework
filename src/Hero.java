@@ -1,38 +1,40 @@
-import java.io.StringReader;
-
 public class Hero {
-  private int health;
-  private int damage;
-  private String superpower;
+    private int heroHealth ;
+    private int heroDamage;
+    private String  heroesAttackType;
 
-    public Hero(int theHealth, int theDamage, String theSuperpower){
-       health=theHealth;
-       damage=theDamage;
-       superpower=theSuperpower;
-    }
-    public Hero(int theHealth, int theDamage){
-     health=theHealth;
-     damage=theDamage;
-    }
-    public int getHealth() {
-        return health;
+    public Hero(int heroHealth, int heroDamage) {
+        this.heroHealth = heroHealth;
+        this.heroDamage = heroDamage;
     }
 
-    public void setHealth() {
-        this.health = health;
+    public Hero(int heroHealth, int heroDamage, String heroesAttackType) {
+        this.heroHealth = heroHealth;
+        this.heroDamage = heroDamage;
+        this.heroesAttackType = heroesAttackType;
     }
 
-    public int getDamage() {
-        return damage;
+    public int getHeroHealth() {
+        return heroHealth;
     }
 
-    public void setDamage() { this.damage = damage;}
-
-    public String getSuperpower() {
-        return superpower;
+    public void setHeroHealth(int heroHealth) {
+        this.heroHealth = heroHealth;
     }
 
-    public void setSuperpower() { this.superpower = superpower;}
+    public int getHeroDamage() {
+        return heroDamage;
+    }
 
+    public void setHeroDamage(int heroDamage) {
+        this.heroDamage = heroDamage;
+    }
+
+    public String getHeroesAttackType() {
+        return heroesAttackType;
+    }
+
+    public void setHeroesAttackType(String heroesAttackType) {
+        this.heroesAttackType = heroesAttackType;
+    }
 }
-
